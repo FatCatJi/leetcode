@@ -20,7 +20,6 @@ public:
             return -1;
         }
         int low = 0, high = n - 1;
-        int offset = 0;
         if (nums[low] > nums[high]) {
             // loop invariant:
             // low in [0, offeset) or high in [offset, n)
