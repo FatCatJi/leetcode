@@ -26,8 +26,8 @@ private:
 					r[1] = nums[j];
 					r[2] = nums[k];
 					result.push_back(r);
-					for (int num = nums[j]; num == nums[j]; ++j);
-					for (int num = nums[k]; num == nums[k]; --k);
+					for (int num = nums[j]; num == nums[j] && j < k; ++j);
+					for (int num = nums[k]; num == nums[k] && j < k; --k);
 				}
 			}
 		}
